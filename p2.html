@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+</head>
+<body>
+  <form>
+    <h1>APPLICATION FORM</h1>
+    <h3>
+      Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the job Application Form.
+    </h3>
+    <table cellspacing="10">
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input id="name" type="text" placeholder="Enter your name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input id="email" type="email" placeholder="Enter your email id"></td>
+      </tr>
+      <tr>
+        <td><label for="age">Age:</label></td>
+        <td><input id="age" type="number" placeholder="Enter your age"></td>
+      </tr>
+      <tr>
+        <td><label for="role">Select role:</label></td>
+        <td>
+          <select id="role">
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Manager</option>
+            <option>Cricketer</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="would you like to list reference?">would you like to list reference?</label></td>
+        <td>
+          <input type="radio" id="yes" name="reference" value="yes"><label for="yes"> Yes</label>
+          <input type="radio" id="no" name="reference" value="no"><label for="no"> No</label><br>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="position">which position would you like to apply for?</label></td>
+        <td>
+          <select id="position">
+            <option>select an option</option>
+            <option>engineer</option>
+            <option>HR</option>
+            <option>janitor</option>
+            <option>CEO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><label>Which programming language do you know?</label></td>
+        <td>
+          <input type="checkbox" id="c++"><label for="c++"> DBMS</label><br>
+          <input type="checkbox" id="java"><label for="java"> JAVA</label><br>
+          <input type="checkbox" id="python"><label for="python"> PYTHON</label><br>
+          <input type="checkbox" id="javascript"><label for="javascript"> javascript</label><br>
+          <input type="checkbox" id="swift"><label for="swift"> swift</label><br>
+          <input type="checkbox" id="ruby"><label for="ruby"> ruby</label><br>
+          <input type="checkbox" id=".NET"><label for=".NET"> .</label><br>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><label for="feedback">Feedback:</label></td>
+        <td><textarea id="feedback" name="feedback" placeholder="Feedback"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Submit application</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
