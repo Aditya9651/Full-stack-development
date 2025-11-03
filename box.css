@@ -1,0 +1,9 @@
+div#one{
+    background-color: cadetblue;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
