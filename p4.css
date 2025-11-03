@@ -1,0 +1,6 @@
+body
+{
+    text-shadow: 0cap 0px 10px greenyellow;
+    border-radius:50%;
+    background-image:repeating-conic-gradient( pink, purple, blue);
+}

@@ -1,0 +1,15 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    animation-name:example;
+    animation-duration: 5s;
+    position: relative;
+}
+@keyframes example {
+    0%   {background-color: aquamarine;top:0px;left:0px;}
+    25%  {background-color: yellow;top:0px;left:1000px;}
+    50%  {background-color: blue;top: 500px; left:1000px;}
+    75%  {background-color: red;top: 500px;left: 0px;}
+    100% {background-color: green;top:0px;left:0px;}
+}
