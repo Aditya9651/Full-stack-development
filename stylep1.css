@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-light: #f8f9fa;
+    --product-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--background-light);
+    font-family: Arial, sans-serif;
+}
+.custom-btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn-primary:hover {
+    background-color: #0056b3 !important; /* Darker shade on hover */
+}
+
+/* Product Image and Carousel Styling */
+.product-carousel-container {
+    margin-bottom: 0; /* Remove default figure margin */
+}
+
+.product-img {
+    max-height: 500px;
+    object-fit: cover; /* Ensures images cover the container well */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%); /* Makes controls visible on dark and light images */
+}
+
+/* Product Information Styling */
+.product-detail {
+    background-color: var(--product-bg);
+    padding: 30px !important;
+    border-radius: 12px !important;
+}
+
+/* Color Swatch Styling */
+.color-swatch {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid transparent; /* Placeholder for active state */
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+    outline: none;
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+}
+
+.color-swatch.active {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--product-bg); /* White halo for visibility */
+}
+
+/* Footer Styling */
+footer {
+    min-height: 80px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 991.98px) {
+    .product-detail .row {
+        flex-direction: column-reverse;
+    }
+}
